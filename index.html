@@ -17,13 +17,13 @@
 		}
 
 		function Insult(){
-		
-			modifiers1 = ["artless"," bawdy"," beslubbering"," bootless"," churlish"," cockered"," clouted"," craven"," currish"," dankish"," dissembling"," droning"," errant"," fawning"," fobbing"," froward"," frothy"," gleekish"," goatish"," gorbellied"," impertinent"," infectuous"," jarring"," lumpish"," mammering"," mangled"," mewling"," paunchy"," pribbling"," puking"," puny"," qualling"," rank"," reeky"," roguish"," ruttish"," saucy"," spleeny"," spongy"," surly"," tottering"," unmuzzled"," vain"," venomed"," villainous"," warped"," wayward"," weedy","yeasty"],
-			modifiers2 = ["base-court"," bat-fowling"," beef-witted"," bettle-headed"," boil-brained"," clapper-clawed"," clay-brained"," common-kissing"," crook-pated"," dismal-dreaming"," dizzy-eyed"," doghearted"," dread-bolted"," earth-vexing"," elf-skinned"," fat-kidneyed"," fen-sucked"," flap-mouthed"," fly-bitten"," folly-fallen"," fool-born"," full-gorged"," guts-griping"," half-faced"," hasty-witted"," hedge-born"," hell-hated"," idle-headed"," ill-breeding"," ill-nurtured"," knotty-pated"," milk-livered"," motley-minded"," onion-eyed"," plume-plucking"," pottle-deep"," pox-marked"," reeling-ripe"," rough-hewn"," rude-growing"," rump-fed"," shard-borne"," sheep-biting"," spur-galled"," swag-bellied"," tardy-gaited"," tickle-brained"," toad-spotted"," unchin-snouted","weather-bitten"],
-			nouns = ["apple-john","baggage","barnacle"," bladder"," boar-pig"," bugbear"," bum-baily"," canker-blossom"," clack-dish"," clotpole"," coxcomb"," codpiece"," death-token"," dewberry"," flap-dragon"," flax-wench"," flirt-gill"," foot-licker"," fustilarian"," giglet"," gudgeon"," haggard"," harpy"," hedge-pig"," horn-beast"," hugger-mugger"," joithead"," lewdster"," lout"," maggot-pie"," malt-worm"," mammet"," measle"," minnow"," miscreant"," moldwarp"," mumble-news"," nut-hook"," pidgeon-egg"," pignut"," puttock"," pumpion"," ratsbane"," scut"," skainsmate"," strumpet"," varlot"," vassal"," whey-face","wagtail"], modifier1 = "", modifier2 = "", noun = "", second = true;
+
+			modifiers1 = ["artless","bawdy","beslubbering","bootless","burly-boned","caluminous","churlish","clouted","cockered","craven","cullionly","currish","dankish","dissembling","droning","errant","fawning","fishified","fobbing","frothy","froward","fusty","gleekish","goatish","gorbellied","impertinent","infectious","jarring","loggerheaded","lumpish","mammering","mangled","mewling","misbegotten","odiferous","paunchy","poisonous","pribbling","puking","puny","qualling","rank","reeky","roguish","ruttish","saucy","spleeny","spongy","surly","tottering","unmuzzled","vain","venomed","villainous","warped","Wart-necked","wayward","weedy","wimpled","yeasty"],
+			modifiers2 = ["base-court","bat-fowling","beef-witted","beetle-headed","boil-brained","brazen-faced","bunch-back'd","clapper-clawed","clay-brained","common-kissing","crook-pated","dismal-dreaming","dizzy-eyed","doghearted","dread-bolted","earth-vexing","elf-skinned","fat-kidneyed","fen-sucked","flap-mouthed","fly-bitten","folly-fallen","fool-born","full-gorged","guts-griping","half-faced","hasty-witted","hedge-born","hell-hated","idle-headed","ill-breeding","ill-nurtured","knotty-pated","leaden-footed","lily-livered","malmsey-nosed","milk-livered","motley-minded","muddy-mettled","onion-eyed","pigeon-liver'd","plume-plucked","pottle-deep","pox-marked","rampallian","reeling-ripe","rough-hewn","rude-growing","rump-fed","scale-sided","scurvy-valiant","shard-borne","sheep-biting","spur-galled","swag-bellied","tardy-gaited","tickle-brained","toad-spotted","unchin-snouted","unwash'd","weather-bitten","whoreson"],
+			nouns = ["apple-john","baggage","barnacle","basket-cockle","bladder","blind-worm","boar-pig","bugbear","bum-bailey","canker-blossom","clack-dish","clotpole","codpiece","coxcomb","death-token","devil-monk","dewberry","flap-dragon","flax-wench","flirt-gill","foot-licker","fustilarian","giglet","gudgeon","haggard","harpy","hedge-pig","horn-beast","hugger-mugger","joithead","jolt-head","knave","lewdster","lout","maggot-pie","malcontent","malt-worm","mammet","measle","minnow","miscreant","moldwarp","mumble-news","nut-hook","pigeon-egg","pignut","popinjay","pumpion","puttock","rascal","ratsbane","scullian","scut","skainsmate","strumpet","toad","varlot","vassal","wagtail","whey-face"], modifier1 = "", modifier2 = "", noun = "", second = true;
 
 			modifier1 = PickRandom(modifiers1);
-			
+
 			// Will we or won't we show the second definition?
 			second = Math.random() < 0.5 ? true : false;
 			if (second === true) {
@@ -32,8 +32,8 @@
 				modifier2 = "";
 			}
 			noun = PickRandom(nouns);
-			
-			document.querySelector("h1").innerHTML = modifier1 + modifier2 + " " + noun;
+
+			document.querySelector("h1").innerHTML = "Thou " + modifier1 + modifier2 + " " + noun;
 		}
 		window.onload = Insult;
 		</script>
